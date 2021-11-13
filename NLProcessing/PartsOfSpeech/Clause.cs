@@ -6,8 +6,8 @@ namespace NLProcessing
 {
     public class Clause
     {
-        public Phrase Subjects { get; }
-        public Predicate Predicate { get; }
+        public readonly Phrase Subjects;
+        public readonly Predicate Predicate;
 
         public Clause(Phrase subjects, Predicate predicate)
         {

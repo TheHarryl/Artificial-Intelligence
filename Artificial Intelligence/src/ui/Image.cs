@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Artificial_Intelligence
 {
-    public class RoundedTextFrame : GameObject
+    public class TextFrame : UIObject
     {
         #region Fields
 

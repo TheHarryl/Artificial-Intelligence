@@ -236,11 +236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\Artificial Intelligence\\Artificial Intelligence.csproj",
+      "projectUniqueName": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\Artificial Intelligence\\Artificial Intelligence.csproj",
       "projectName": "Artificial Intelligence",
-      "projectPath": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\Artificial Intelligence\\Artificial Intelligence.csproj",
+      "projectPath": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\Artificial Intelligence\\Artificial Intelligence.csproj",
       "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\Artificial Intelligence\\obj\\",
+      "outputPath": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\Artificial Intelligence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -263,8 +263,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\NLProcessing.csproj": {
-              "projectPath": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\NLProcessing.csproj"
+            "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\NLProcessing.csproj": {
+              "projectPath": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\NLProcessing.csproj"
             }
           }
         }
@@ -303,7 +303,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

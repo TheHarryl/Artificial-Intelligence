@@ -6,8 +6,8 @@ namespace NLProcessing
 {
     public class Sentence
     {
-        public List<Clause> Clauses { get; }
-        public List<Word> Conjunctions { get; }
+        public readonly List<Clause> Clauses;
+        public readonly List<Word> Conjunctions;
         
         public Sentence(List<Clause> clauses, List<Word> conjunctions)
         {

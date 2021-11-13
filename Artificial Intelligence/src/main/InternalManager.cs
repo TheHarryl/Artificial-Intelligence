@@ -73,5 +73,10 @@ namespace Artificial_Intelligence
                 state.Draw(gameTime, spriteBatch);
             }
         }
+
+        public static Texture2D CreateTexture(int width, int height)
+        {
+            return new Texture2D(_graphics.GraphicsDevice, width, height);
+        }
     }
 }

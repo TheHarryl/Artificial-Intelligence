@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/harry/Desktop/MonoGame/Artificial Intelligence/Artificial Intelligence/Content/rectangle.png</File>
+    <File>C:/Users/harry/Desktop/Artificial-Intelligence/Artificial Intelligence/Content/Arial.spritefont</File>
+    <File>C:/Users/harry/Desktop/Artificial-Intelligence/Artificial Intelligence/Content/rectangle.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

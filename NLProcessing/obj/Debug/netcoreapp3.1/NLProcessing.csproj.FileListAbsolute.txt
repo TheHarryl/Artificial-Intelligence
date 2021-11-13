@@ -18,3 +18,13 @@ C:\Users\harry\Desktop\Artificial Intelligence\NLProcessing\obj\Debug\netcoreapp
 C:\Users\harry\Desktop\Artificial Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.csproj.CoreCompileInputs.cache
 C:\Users\harry\Desktop\Artificial Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.dll
 C:\Users\harry\Desktop\Artificial Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.pdb
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\bin\Debug\netcoreapp3.1\NLProcessing.deps.json
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\bin\Debug\netcoreapp3.1\NLProcessing.dll
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\bin\Debug\netcoreapp3.1\NLProcessing.pdb
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.csproj.AssemblyReference.cache
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.AssemblyInfoInputs.cache
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.AssemblyInfo.cs
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.csproj.CoreCompileInputs.cache
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.dll
+C:\Users\harry\Desktop\Artificial-Intelligence\NLProcessing\obj\Debug\netcoreapp3.1\NLProcessing.pdb

@@ -14,7 +14,8 @@ namespace Artificial_Intelligence
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            this.IsMouseVisible = true;
+            this.IsFixedTimeStep = false;
         }
 
         protected override void Initialize()

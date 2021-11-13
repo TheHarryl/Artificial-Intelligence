@@ -6,8 +6,8 @@ namespace NLProcessing
 {
     public class Phrase
     {
-        public List<Word> Words { get; }
-        public List<Word> Conjunctions { get; }
+        public readonly List<Word> Words;
+        public readonly List<Word> Conjunctions;
 
         public Phrase(List<Word> words, List<Word> conjunctions)
         {
