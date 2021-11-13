@@ -15,7 +15,19 @@ namespace Artificial_Intelligence
         private Color _color;
         private int _cornerRadius;
 
-        public List<UIObject> Children;
+        private List<UIObject> _children;
+        public List<UIObject> Children
+        {
+            get => _children;
+            set
+            {
+                _children = value;
+                for (int i = 0; i < _children.Count; i++)
+                {
+                    _children[i].Parent = this;
+                }
+            }
+        }
 
         public Vector2 Size {
             get => _size;
@@ -32,6 +44,8 @@ namespace Artificial_Intelligence
             set
             {
                 _cornerRadius = value;
+                if (_cornerRadius > Size.X / 2)
+                    _cornerRadius = (int)(Size.X / 2);
                 if (_cornerRadius > Size.Y / 2)
                     _cornerRadius = (int)(Size.Y / 2);
                 GenerateTexture();
@@ -66,7 +80,7 @@ namespace Artificial_Intelligence
 
         public override void Draw(SpriteBatch spriteBatch, Vector2 offset = new Vector2())
         {
-            spriteBatch.Draw(_texture, _position, _color);
+            spriteBatch.Draw(_texture, _position + offset, _color);
             for (int i = 0; i < Children.Count; i++)
             {
                 Children[i].Draw(spriteBatch, offset + Position);
@@ -93,7 +107,15 @@ namespace Artificial_Intelligence
                 {
                     for (int x = 0; x < CornerRadius; x++)
                     {
-                        if (Math.Pow(Math.Pow(CornerRadius - y, 2) + Math.Pow(CornerRadius - x, 2), 0.5) <= CornerRadius)
+                        double distanceFromCorner = Math.Pow(Math.Pow(CornerRadius - y, 2) + Math.Pow(CornerRadius - x, 2), 0.5) - CornerRadius;
+                        if (Math.Abs(distanceFromCorner) <= 1)
+                        {
+                            _data[x + y * (int)Size.X] = Color.White * (1f - (float)distanceFromCorner);
+                            _data[((int)Size.X - x) + y * (int)Size.X - 1] = Color.White * (1f - (float)distanceFromCorner);
+                            _data[x + ((int)Size.Y - y - 1) * (int)Size.X] = Color.White * (1f - (float)distanceFromCorner);
+                            _data[((int)Size.X - x) + ((int)Size.Y - y - 1) * (int)Size.X - 1] = Color.White * (1f - (float)distanceFromCorner);
+                        }
+                        else if (distanceFromCorner < 0)
                         {
                             _data[x + y * (int)Size.X] = Color.White;
                             _data[((int)Size.X - x) + y * (int)Size.X - 1] = Color.White;

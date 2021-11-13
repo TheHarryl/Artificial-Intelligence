@@ -12,6 +12,7 @@ namespace Artificial_Intelligence
         protected float _hoverDarken;
         protected float _clickDarken;
         protected bool _pressed;
+        protected bool _hoverCursorIcon;
 
         public bool Hovering;
 
@@ -19,10 +20,11 @@ namespace Artificial_Intelligence
 
         #region Methods
 
-        public Button(List<UIObject> children, Vector2 position, Vector2 size, Color color, int cornerRadius = 0, float hoverDarken = 0.25f, float clickDarken = 0.5f) : base(children, position, size, color, cornerRadius)
+        public Button(List<UIObject> children, Vector2 position, Vector2 size, Color color, int cornerRadius = 0, float hoverDarken = 0.2f, float clickDarken = 0.4f, bool hoverCursorIcon = false) : base(children, position, size, color, cornerRadius)
         {
             _hoverDarken = hoverDarken;
             _clickDarken = clickDarken;
+            _hoverCursorIcon = hoverCursorIcon;
         }
 
         private bool IsHovering(Vector2 offset = new Vector2())
@@ -36,13 +38,14 @@ namespace Artificial_Intelligence
             return _data[(mouseState.X - (int)(Position + offset).X) + (mouseState.Y - (int)(Position + offset).Y) * (int)Size.X] == Color.White;
         }
         
-        public void OnClickStart(GameTime gameTime, Vector2 offset = new Vector2())
+        protected void OnClickStart(GameTime gameTime, Vector2 offset = new Vector2())
         {
+
         }
 
-        public void OnClickEnd(GameTime gameTime, Vector2 offset = new Vector2())
+        protected void OnClickEnd(GameTime gameTime, Vector2 offset = new Vector2())
         {
-            TweenPosition(gameTime, new Vector2(400, 50), EasingDirection.Out, EasingStyle.Linear, 0.2f);
+            
         }
 
         public override void Update(GameTime gameTime, Vector2 offset = new Vector2())
@@ -51,20 +54,25 @@ namespace Artificial_Intelligence
             if (IsHovering(offset))
             {
                 Hovering = true;
+                if (_hoverCursorIcon)
+                    Mouse.SetCursor(MouseCursor.Hand);
                 if (mouseState.LeftButton == ButtonState.Pressed && _pressed == false)
                 {
                     _pressed = true;
                     OnClickStart(gameTime, offset);
                 }
-                else if (mouseState.LeftButton == ButtonState.Released && _pressed == true)
-                {
-                    _pressed = false;
-                    OnClickEnd(gameTime, offset);
-                }
             }
-            else
+            else if (Hovering == true)
             {
                 Hovering = false;
+                if (_hoverCursorIcon)
+                    Mouse.SetCursor(MouseCursor.Arrow);
+            }
+            if (mouseState.LeftButton == ButtonState.Released && _pressed == true)
+            {
+                _pressed = false;
+                if (Hovering)
+                    OnClickEnd(gameTime, offset);
             }
             base.Update(gameTime, offset);
         }
@@ -74,11 +82,11 @@ namespace Artificial_Intelligence
             base.Draw(spriteBatch, offset);
             if (_pressed)
             {
-                spriteBatch.Draw(_texture, Position, Color.Black * _clickDarken);
+                spriteBatch.Draw(_texture, Position + offset, Color.Black * _clickDarken);
             }
             else if (Hovering)
             {
-                spriteBatch.Draw(_texture, Position, Color.Black * _hoverDarken);
+                spriteBatch.Draw(_texture, Position + offset, Color.Black * _hoverDarken);
             }
         }
 

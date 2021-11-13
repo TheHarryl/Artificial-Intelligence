@@ -6,8 +6,10 @@
   <SourceFiles>
     <File>C:/Users/harry/Desktop/Artificial-Intelligence/Artificial Intelligence/Content/Arial.spritefont</File>
     <File>C:/Users/harry/Desktop/Artificial-Intelligence/Artificial Intelligence/Content/rectangle.png</File>
+    <File>C:/Users/harry/Desktop/Artificial-Intelligence/Artificial Intelligence/Content/square.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

@@ -14,6 +14,13 @@ namespace Artificial_Intelligence
         private Tween _sizeTween;
         private Tween _positionTween;
 
+        private UIObject _parent;
+        public UIObject Parent
+        {
+            get => _parent != null ? _parent : this;
+            set => _parent = value;
+        }
+
         #endregion
 
         #region Methods
