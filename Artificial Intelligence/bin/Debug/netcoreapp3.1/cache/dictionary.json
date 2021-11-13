@@ -1,0 +1,1448 @@
+{
+  "hello": [
+    {
+      "word": "hello",
+      "phonetic": "həˈləʊ",
+      "phonetics": [
+        {
+          "text": "həˈləʊ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
+        },
+        {
+          "text": "hɛˈləʊ"
+        }
+      ],
+      "origin": "early 19th century: variant of earlier hollo ; related to holla.",
+      "meanings": [
+        {
+          "partOfSpeech": "exclamation",
+          "definitions": [
+            {
+              "definition": "used as a greeting or to begin a phone conversation.",
+              "example": "hello there, Katie!",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "an utterance of ‘hello’; a greeting.",
+              "example": "she was getting polite nods and hellos from people",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "say or shout ‘hello’.",
+              "example": "I pressed the phone button and helloed",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "i": [
+    {
+      "word": "i",
+      "phonetic": "ʌɪ",
+      "phonetics": [
+        {
+          "text": "ʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/i--_gb_1.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "symbol",
+          "definitions": [
+            {
+              "definition": "the imaginary quantity equal to the square root of minus one.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "-i-",
+      "phonetic": "ɪ",
+      "phonetics": [
+        {
+          "text": "ɪ"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "suffix",
+          "definitions": [
+            {
+              "definition": "a connecting vowel chiefly forming words ending in -ana, -ferous, -fic, -form, -fy, -gerous, -vorous.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "-i",
+      "phonetic": "i",
+      "phonetics": [
+        {
+          "text": "i"
+        },
+        {
+          "text": "ʌɪ"
+        },
+        {
+          "text": "iː"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "suffix",
+          "definitions": [
+            {
+              "definition": "forming the plural of nouns adopted from Latin ending in -us.",
+              "example": "foci",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "forming the plural of nouns adopted from Italian ending in -e or -o.",
+              "example": "dilettanti",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "-i",
+      "phonetics": [
+        {}
+      ],
+      "origin": "from Semitic and Indo-Iranian adjectival endings.",
+      "meanings": [
+        {
+          "partOfSpeech": "suffix",
+          "definitions": [
+            {
+              "definition": "forming adjectives from names of countries or regions in the Near or Middle East.",
+              "example": "Azerbaijani",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "I",
+      "phonetic": "ʌɪ",
+      "phonetics": [
+        {
+          "text": "ʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/i--_gb_1.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the ninth letter of the alphabet.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the Roman numeral for one.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "I",
+      "phonetic": "ʌɪ",
+      "phonetics": [
+        {
+          "text": "ʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/i--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English, of Germanic origin; related to Dutch ik and German ich, from an Indo-European root shared by Latin ego and Greek egō .",
+      "meanings": [
+        {
+          "partOfSpeech": "pronoun",
+          "definitions": [
+            {
+              "definition": "used by a speaker to refer to himself or herself.",
+              "example": "accept me for what I am",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "(in metaphysics) the subject or object of self-consciousness; the ego.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "I",
+      "phonetic": "ʌɪ",
+      "phonetics": [
+        {
+          "text": "ʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/i--_gb_1.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "abbreviation",
+          "definitions": [
+            {
+              "definition": "Island(s) or Isle(s) (chiefly on maps).",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "Italy (international vehicle registration).",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "symbol",
+          "definitions": [
+            {
+              "definition": "electric current.",
+              "example": "V = I/R",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "the chemical element iodine.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "iodine",
+      "phonetic": "ˈʌɪədiːn",
+      "phonetics": [
+        {
+          "text": "ˈʌɪədiːn",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/iodine--_gb_1.mp3"
+        },
+        {
+          "text": "ˈʌɪədʌɪn"
+        },
+        {
+          "text": "ˈʌɪədɪn"
+        }
+      ],
+      "origin": "early 19th century: from French iode (from Greek iōdēs ‘violet-coloured’, from ion ‘violet’ + -eidēs ‘like’) + -ine4.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the chemical element of atomic number 53, a non-metallic element forming black crystals and a violet vapour.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "am": [
+    {
+      "word": "am",
+      "phonetic": "am",
+      "phonetics": [
+        {
+          "text": "am",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/am--_gb_5.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "first person singular present of be.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Am",
+      "phonetics": [
+        {}
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "symbol",
+          "definitions": [
+            {
+              "definition": "the chemical element americium.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "AM",
+      "phonetic": "eɪˈɛm",
+      "phonetics": [
+        {
+          "text": "eɪˈɛm",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/a_m_--1_gb_2_abbr.mp3"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "abbreviation",
+          "definitions": [
+            {
+              "definition": "amplitude modulation.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "Hymns Ancient and Modern.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "Master of Arts.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "Member of the Order of Australia.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "an Assembly Member (i.e. a Member of the Welsh Assembly).",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "a.m.",
+      "phonetic": "eɪˈɛm",
+      "phonetics": [
+        {
+          "text": "eɪˈɛm",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/a_m_--1_gb_1_abbr.mp3"
+        }
+      ],
+      "origin": "from Latin ante meridiem .",
+      "meanings": [
+        {
+          "partOfSpeech": "abbreviation",
+          "definitions": [
+            {
+              "definition": "before noon (used after times of day between midnight and noon that are not expressed using the 24-hour clock).",
+              "example": "the aircraft departed at 8 a.m. local time",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "americium",
+      "phonetic": "ˌaməˈrɪsjəm",
+      "phonetics": [
+        {
+          "text": "ˌaməˈrɪsjəm",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/americium--_gb_1.8.mp3"
+        }
+      ],
+      "origin": "1940s: from America (where it was first made) + -ium.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the chemical element of atomic number 95, a radioactive metal of the actinide series. Americium does not occur naturally and was first made by bombarding plutonium with neutrons.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "amplitude modulation",
+      "phonetics": [
+        {}
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the modulation of a wave by varying its amplitude, used especially as a means of broadcasting an audio signal by combining it with a radio carrier wave.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "be",
+      "phonetic": "biː",
+      "phonetics": [
+        {
+          "text": "biː",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/be--_gb_6.mp3"
+        }
+      ],
+      "origin": "Old English bēon, an irregular and defective verb, whose full conjugation derives from several originally distinct verbs. The forms am and is are from an Indo-European root shared by Latin sum and est . The forms was and were are from an Indo-European root meaning ‘remain’. The forms be and been are from an Indo-European root shared by Latin fui ‘I was’, fio ‘I become’, and Greek phuein ‘bring forth, cause to grow’. The origin of are is uncertain.",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "exist.",
+              "example": "there are no easy answers",
+              "synonyms": [
+                "exist",
+                "have being",
+                "have existence",
+                "live",
+                "be alive",
+                "have life",
+                "breathe",
+                "draw breath",
+                "be extant",
+                "be viable"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "occur; take place.",
+              "example": "the exhibition will be in November",
+              "synonyms": [
+                "occur",
+                "happen",
+                "take place",
+                "come about",
+                "arise",
+                "crop up",
+                "transpire",
+                "fall",
+                "materialize",
+                "ensue",
+                "come to pass",
+                "befall",
+                "betide"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "having the state, quality, identity, nature, role, etc., specified.",
+              "example": "Amy was 91",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "say.",
+              "example": "last time I saw her she was all ‘You need to quit smoking!’",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "used with a present participle to form continuous tenses.",
+              "example": "they are coming",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "used with a past participle to form the passive voice.",
+              "example": "it was done",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "used to indicate something that is due or destined to happen.",
+              "example": "construction is to begin next summer",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "used with the past participle of intransitive verbs to form perfect tenses.",
+              "example": "I am returned",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "the": [
+    {
+      "word": "the",
+      "phonetic": "ðə",
+      "phonetics": [
+        {
+          "text": "ðə",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/the--_gb_1.mp3"
+        },
+        {
+          "text": "ðɪ"
+        },
+        {
+          "text": "ðiː"
+        }
+      ],
+      "origin": "Old English se, sēo, thæt, ultimately superseded by forms from Northumbrian and North Mercian thē, of Germanic origin; related to Dutch de, dat, and German der, die, das .",
+      "meanings": [
+        {
+          "partOfSpeech": "determiner",
+          "definitions": [
+            {
+              "definition": "denoting one or more people or things already mentioned or assumed to be common knowledge.",
+              "example": "what's the matter?",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "used to point forward to a following qualifying or defining clause or phrase.",
+              "example": "the fuss that he made of her",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "used to make a generalized reference to something rather than identifying a particular instance.",
+              "example": "he taught himself to play the violin",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "enough of (a particular thing).",
+              "example": "he hoped to publish monthly, if only he could find the money",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "(pronounced stressing ‘the’) used to indicate that someone or something is the best known or most important of that name or type.",
+              "example": "he was the hot young piano prospect in jazz",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "used adverbially with comparatives to indicate how one amount or degree of something varies in relation to another.",
+              "example": "the more she thought about it, the more devastating it became",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "coolest": [
+    {
+      "word": "cool",
+      "phonetic": "kuːl",
+      "phonetics": [
+        {
+          "text": "kuːl",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cool--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English cōl (noun), cōlian (verb), of Germanic origin; related to Dutch koel, also to cold.",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "of or at a fairly low temperature.",
+              "example": "it'll be a cool afternoon",
+              "synonyms": [
+                "chilly",
+                "cold",
+                "fresh",
+                "crisp",
+                "refreshing",
+                "invigorating",
+                "bracing",
+                "brisk",
+                "unheated",
+                "draughty",
+                "nippy",
+                "parky",
+                "chill"
+              ],
+              "antonyms": [
+                "warm",
+                "hot"
+              ]
+            },
+            {
+              "definition": "showing no friendliness towards a person or enthusiasm for an idea or project.",
+              "example": "he gave a cool reception to the suggestion for a research centre",
+              "synonyms": [
+                "unenthusiastic",
+                "lukewarm",
+                "tepid",
+                "indifferent",
+                "apathetic",
+                "half-hearted",
+                "negative",
+                "unfriendly",
+                "distant",
+                "remote",
+                "aloof",
+                "cold",
+                "chilly",
+                "frosty",
+                "unwelcoming",
+                "inhospitable",
+                "unresponsive",
+                "uninterested",
+                "unconcerned",
+                "offhand",
+                "detached",
+                "impersonal",
+                "dispassionate",
+                "undemonstrative",
+                "uncommunicative",
+                "unfeeling",
+                "unemotional",
+                "emotionless",
+                "stand-offish",
+                "off",
+                "offish",
+                "unenthused",
+                "Olympian",
+                "gelid"
+              ],
+              "antonyms": [
+                "enthusiastic",
+                "friendly"
+              ]
+            },
+            {
+              "definition": "fashionably attractive or impressive.",
+              "example": "youngsters are turning to smoking because they think it makes them appear cool",
+              "synonyms": [
+                "fashionable",
+                "in fashion",
+                "in vogue",
+                "voguish",
+                "(bang) up to date",
+                "up to the minute",
+                "modern",
+                "all the rage",
+                "modish",
+                "trendsetting",
+                "stylish",
+                "chic",
+                "sophisticated",
+                "cosmopolitan",
+                "elegant",
+                "smart",
+                "glamorous",
+                "classy",
+                "high-class",
+                "high-toned",
+                "attractive",
+                "appealing",
+                "impressive",
+                "le dernier cri",
+                "trendy",
+                "funky",
+                "with it",
+                "hip",
+                "in",
+                "the in thing",
+                "big",
+                "happening",
+                "now",
+                "sharp",
+                "swinging",
+                "hot",
+                "massive",
+                "mod",
+                "snazzy",
+                "kicky",
+                "kicking",
+                "tony",
+                "fly",
+                "stylin'",
+                "spiffy",
+                "sassy",
+                "on fleek",
+                "down",
+                "groovy",
+                "all the go"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "used to emphasize the size of an amount of money.",
+              "example": "research for a new drug can cost a cool £50 million",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guy": [
+    {
+      "word": "guy",
+      "phonetic": "ɡʌɪ",
+      "phonetics": [
+        {
+          "text": "ɡʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/guy--_gb_1.mp3"
+        }
+      ],
+      "origin": "early 19th century (in guy1 (sense 2 of the noun)): named after Guy Fawkes (see Gunpowder Plot).",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a man.",
+              "example": "he's a nice guy",
+              "synonyms": [
+                "man",
+                "fellow",
+                "gentleman",
+                "lad",
+                "youth",
+                "boy",
+                "individual",
+                "person",
+                "soul",
+                "fella",
+                "geezer",
+                "gent",
+                "character",
+                "customer",
+                "creature",
+                "sort",
+                "type",
+                "chap",
+                "bloke",
+                "bod",
+                "dude",
+                "hombre",
+                "digger",
+                "ou",
+                "oom",
+                "oke",
+                "admi",
+                "cove",
+                "wight",
+                "carl",
+                "sod",
+                "bugger"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "a figure representing Guy Fawkes, burnt on a bonfire on Guy Fawkes Night, and often displayed by children begging for money for fireworks.",
+              "synonyms": [
+                "effigy of Guy Fawkes",
+                "effigy",
+                "figure",
+                "representation",
+                "likeness",
+                "image",
+                "model",
+                "dummy"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "make fun of; ridicule.",
+              "example": "she never stopped guying him about his weight",
+              "synonyms": [
+                "ridicule",
+                "make fun of",
+                "poke fun at",
+                "laugh at",
+                "make a joke of",
+                "mock",
+                "sneer at",
+                "jibe at",
+                "jeer at",
+                "deride",
+                "scorn",
+                "scoff at",
+                "satirize",
+                "lampoon",
+                "send up",
+                "rib",
+                "take off",
+                "take the mickey out of",
+                "rag",
+                "goof on",
+                "rag on",
+                "poke mullock at",
+                "sling off at",
+                "make sport of",
+                "take the piss out of"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "guy",
+      "phonetic": "ɡʌɪ",
+      "phonetics": [
+        {
+          "text": "ɡʌɪ",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/guy--_gb_1.mp3"
+        }
+      ],
+      "origin": "late Middle English: probably of Low German origin; related to Dutch gei ‘brail’ and German Geitaue ‘brails’.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a rope or line fixed to the ground to secure a tent or other structure.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "secure with a guy or guys.",
+              "example": "it was set on concrete footings and guyed with steel cable",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "GUY",
+      "phonetics": [
+        {}
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "abbreviation",
+          "definitions": [
+            {
+              "definition": "Guyana (international vehicle registration).",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "in": [
+    {
+      "word": "in",
+      "phonetic": "ɪn",
+      "phonetics": [
+        {
+          "text": "ɪn",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/in--_gb_3.mp3"
+        }
+      ],
+      "origin": "Old English in (preposition), inn, inne (adverb), of Germanic origin; related to Dutch and German in (preposition), German ein (adverb), from an Indo-European root shared by Latin in and Greek en .",
+      "meanings": [
+        {
+          "partOfSpeech": "preposition",
+          "definitions": [
+            {
+              "definition": "expressing the situation of something that is or appears to be enclosed or surrounded by something else.",
+              "example": "I'm living in London",
+              "synonyms": [
+                "inside",
+                "within",
+                "in the middle of",
+                "within the bounds/confines of",
+                "surrounded by",
+                "enclosed by"
+              ],
+              "antonyms": [
+                "outside"
+              ]
+            },
+            {
+              "definition": "expressing a period of time during which an event happens or a situation remains the case.",
+              "example": "they met in 1885",
+              "synonyms": [
+                "during",
+                "in the course of",
+                "in the time of",
+                "over"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "expressing the length of time before a future event is expected to happen.",
+              "example": "I'll see you in fifteen minutes",
+              "synonyms": [
+                "after",
+                "at the end of",
+                "following",
+                "subsequent to",
+                "within",
+                "in less than",
+                "in under",
+                "in no more than",
+                "before a … is up"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "(often followed by a noun without a determiner) expressing a state or condition.",
+              "example": "to be in love",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "expressing inclusion or involvement.",
+              "example": "I read it in a book",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "indicating someone's occupation or profession.",
+              "example": "she works in publishing",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "indicating the language or medium used.",
+              "example": "say it in French",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "as an integral part of (an activity).",
+              "example": "in planning public expenditure it is better to be prudent",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "expressing a value as a proportion of (a whole).",
+              "example": "a local income tax running at six pence in the pound",
+              "synonyms": [
+                "to",
+                "per",
+                "every",
+                "each"
+              ],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "adverb",
+          "definitions": [
+            {
+              "definition": "expressing movement with the result that someone or something becomes enclosed or surrounded by something else.",
+              "example": "come in",
+              "synonyms": [
+                "inside",
+                "indoors",
+                "into the interior",
+                "into the room/house/building",
+                "within"
+              ],
+              "antonyms": [
+                "out"
+              ]
+            },
+            {
+              "definition": "expressing the situation of being enclosed or surrounded by something.",
+              "example": "we were locked in",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "expressing arrival.",
+              "example": "the train got in very late",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "(of the tide) rising or at its highest level.",
+              "synonyms": [
+                "high",
+                "at its highest level",
+                "rising"
+              ],
+              "antonyms": [
+                "out",
+                "low"
+              ]
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "definition": "present at one's home or office.",
+              "example": "we knocked at the door but there was no one in",
+              "synonyms": [
+                "present",
+                "home",
+                "at home",
+                "inside",
+                "indoors",
+                "in the house/room"
+              ],
+              "antonyms": [
+                "out"
+              ]
+            },
+            {
+              "definition": "fashionable.",
+              "example": "pastels and light colours are in this year",
+              "synonyms": [
+                "fashionable",
+                "in fashion",
+                "in vogue",
+                "voguish",
+                "stylish",
+                "in style",
+                "popular",
+                "(bang) up to date",
+                "up to the minute",
+                "modern",
+                "modish",
+                "trendsetting",
+                "chic",
+                "à la mode",
+                "de rigueur",
+                "trendy",
+                "all the rage",
+                "with it",
+                "cool",
+                "the in thing",
+                "hot",
+                "hip",
+                "happening",
+                "now",
+                "swinging",
+                "all the go"
+              ],
+              "antonyms": [
+                "unfashionable",
+                "out"
+              ]
+            },
+            {
+              "definition": "(of the ball in tennis and similar games) landing within the designated playing area.",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "batting.",
+              "example": "which side is in?",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a position of influence with someone powerful or famous.",
+              "example": "she got an in with the promising new artist",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "in.",
+      "phonetics": [
+        {}
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "abbreviation",
+          "definitions": [
+            {
+              "definition": "inch(es).",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "in-",
+      "phonetic": "ɪn",
+      "phonetics": [
+        {
+          "text": "ɪn"
+        }
+      ],
+      "origin": "from Latin.",
+      "meanings": [
+        {
+          "partOfSpeech": "prefix",
+          "definitions": [
+            {
+              "definition": "(added to adjectives) not.",
+              "example": "infertile",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "(added to nouns) without; a lack of.",
+              "example": "inappreciation",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "-in",
+      "phonetic": "ɪn",
+      "phonetics": [
+        {
+          "text": "ɪn"
+        }
+      ],
+      "origin": "alteration of -ine4.",
+      "meanings": [
+        {
+          "partOfSpeech": "suffix",
+          "definitions": [
+            {
+              "definition": "forming names of organic compounds, pharmaceutical products, proteins, etc.",
+              "example": "insulin",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "in-",
+      "phonetic": "ɪn",
+      "phonetics": [
+        {
+          "text": "ɪn"
+        }
+      ],
+      "origin": "representing in or the Latin preposition in .",
+      "meanings": [
+        {
+          "partOfSpeech": "prefix",
+          "definitions": [
+            {
+              "definition": "in; into; towards; within.",
+              "example": "induce",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "-in",
+      "phonetic": "ɪn",
+      "phonetics": [
+        {
+          "text": "ɪn"
+        }
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "suffix",
+          "definitions": [
+            {
+              "definition": "denoting a gathering of people having a common purpose, typically as a form of protest.",
+              "example": "sit-in",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "In",
+      "phonetics": [
+        {}
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "symbol",
+          "definitions": [
+            {
+              "definition": "the chemical element indium.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "IN",
+      "phonetics": [
+        {}
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "abbreviation",
+          "definitions": [
+            {
+              "definition": "Indiana (in official postal use).",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "indium",
+      "phonetic": "ˈɪndɪəm",
+      "phonetics": [
+        {
+          "text": "ˈɪndɪəm",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/indium--_gb_1.mp3"
+        }
+      ],
+      "origin": "mid 19th century: from indigo (because there are two characteristic indigo lines in its spectrum) + -ium.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the chemical element of atomic number 49, a soft silvery-white metal occurring naturally in association with zinc and some other metals.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "land": [
+    {
+      "word": "land",
+      "phonetic": "land",
+      "phonetics": [
+        {
+          "text": "land",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/land--_gb_1.mp3"
+        }
+      ],
+      "origin": "Old English, of Germanic origin; related to Dutch land and German Land .",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "the part of the earth's surface that is not covered by water.",
+              "example": "the reptiles lay their eggs on land",
+              "synonyms": [
+                "terra firma",
+                "dry land",
+                "solid ground",
+                "coast",
+                "coastline",
+                "shore"
+              ],
+              "antonyms": [
+                "sea"
+              ]
+            },
+            {
+              "definition": "a country or state.",
+              "example": "the valley is one of the most beautiful in the land",
+              "synonyms": [
+                "country",
+                "nation",
+                "state",
+                "nation state",
+                "fatherland",
+                "motherland",
+                "homeland",
+                "realm",
+                "kingdom",
+                "empire",
+                "republic",
+                "commonwealth",
+                "province",
+                "territory",
+                "district",
+                "region",
+                "area",
+                "domain"
+              ],
+              "antonyms": []
+            },
+            {
+              "definition": "the space between the rifling grooves in a gun.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "definition": "put (someone or something) on land from a boat.",
+              "example": "he landed his troops at Hastings",
+              "synonyms": [],
+              "antonyms": []
+            },
+            {
+              "definition": "come down through the air and rest on the ground or another surface.",
+              "example": "we will shortly be landing at Gatwick",
+              "synonyms": [
+                "touch down",
+                "alight",
+                "make a landing",
+                "come in to land",
+                "come down",
+                "come to rest",
+                "arrive",
+                "perch",
+                "settle",
+                "bring down",
+                "put down",
+                "take down"
+              ],
+              "antonyms": [
+                "take off",
+                "fly off"
+              ]
+            },
+            {
+              "definition": "inflict (a blow) on someone.",
+              "example": "I won the fight without landing a single punch",
+              "synonyms": [
+                "inflict",
+                "deal",
+                "deliver",
+                "administer",
+                "deposit",
+                "dispense",
+                "give",
+                "catch",
+                "mete out",
+                "fetch"
+              ],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Land",
+      "phonetic": "land",
+      "phonetics": [
+        {
+          "text": "land",
+          "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/land--_gb_1.mp3"
+        },
+        {
+          "text": "German lant"
+        }
+      ],
+      "origin": "German, literally ‘land’.",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "definition": "a state of Germany or Austria.",
+              "synonyms": [],
+              "antonyms": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}{}{}{}{}{}{}{}{}{}
