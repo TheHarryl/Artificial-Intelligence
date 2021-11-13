@@ -45,7 +45,7 @@ namespace Artificial_Intelligence
             }, new Vector2(50, 250), new Vector2(50, 50), Color.White, 25);
             button3 = new Button(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, -5), new Vector2(200, 50), "test", Color.Gray, Alignment.Center)
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 50), "test", Color.Gray, Alignment.Center)
             }, new Vector2(50, 350), new Vector2(200, 50), Color.White, 10);
         }
 

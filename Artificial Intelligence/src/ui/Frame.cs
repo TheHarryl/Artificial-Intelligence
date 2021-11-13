@@ -97,8 +97,8 @@ namespace Artificial_Intelligence
                         {
                             _data[x + y * (int)Size.X] = Color.White;
                             _data[((int)Size.X - x) + y * (int)Size.X - 1] = Color.White;
-                            _data[x + ((int)Size.Y - y - CornerRadius - 1) * (int)Size.X] = Color.White;
-                            _data[((int)Size.X - x) + ((int)Size.Y - y - CornerRadius - 1) * (int)Size.X - 1] = Color.White;
+                            _data[x + ((int)Size.Y - y - 1) * (int)Size.X] = Color.White;
+                            _data[((int)Size.X - x) + ((int)Size.Y - y - 1) * (int)Size.X - 1] = Color.White;
                         }
                     }
                 }
@@ -109,13 +109,13 @@ namespace Artificial_Intelligence
                         for (int x = CornerRadius; x < Size.X - CornerRadius; x++)
                         {
                             _data[x + y * (int)Size.X] = Color.White;
-                            _data[x + (y + (int)Size.Y - 2 * CornerRadius) * (int)Size.X] = Color.White;
+                            _data[x + (y + (int)Size.Y - CornerRadius) * (int)Size.X] = Color.White;
                         }
                     }
                 }
                 if (CornerRadius * 2 < Size.Y)
                 {
-                    for (int y = CornerRadius; y < Size.Y - (2 * CornerRadius); y++)
+                    for (int y = CornerRadius; y < Size.Y - CornerRadius; y++)
                     {
                         for (int x = 0; x < Size.X; x++)
                         {
