@@ -11,8 +11,8 @@ namespace Artificial_Intelligence
 
         protected Vector2 _size;
 
-        private Tween _sizeTween;
-        private Tween _positionTween;
+        protected Tween _sizeTween;
+        protected Tween _positionTween;
 
         private UIObject _parent;
         public UIObject Parent
@@ -47,20 +47,20 @@ namespace Artificial_Intelligence
             
         }
 
-        public void TweenPosition(GameTime gameTime, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
+        public virtual void TweenPosition(double timestampInSeconds, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
         {
-            _positionTween = new Tween(_position, endPosition, gameTime, time, easingDirection, easingStyle);
+            _positionTween = new Tween(_position, endPosition, timestampInSeconds, time, easingDirection, easingStyle);
         }
 
-        public void TweenSize(GameTime gameTime, Vector2 endSize, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
+        public virtual void TweenSize(double timestampInSeconds, Vector2 endSize, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
         {
-            _sizeTween = new Tween(_size, endSize, gameTime, time, easingDirection, easingStyle);
+            _sizeTween = new Tween(_size, endSize, timestampInSeconds, time, easingDirection, easingStyle);
         }
 
-        public void TweenSizeAndPosition(GameTime gameTime, Vector2 endSize, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
+        public void TweenSizeAndPosition(double timestampInSeconds, Vector2 endSize, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
         {
-            TweenSize(gameTime, endSize, EasingDirection.Out, EasingStyle.Quad, 1f);
-            TweenPosition(gameTime, endPosition, EasingDirection.Out, EasingStyle.Quad, 1f);
+            TweenSize(timestampInSeconds, endSize, EasingDirection.Out, EasingStyle.Quad, 1f);
+            TweenPosition(timestampInSeconds, endPosition, EasingDirection.Out, EasingStyle.Quad, 1f);
         }
 
         #endregion

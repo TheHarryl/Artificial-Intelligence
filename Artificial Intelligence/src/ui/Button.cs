@@ -12,7 +12,7 @@ namespace Artificial_Intelligence
         protected float _hoverDarken;
         protected float _clickDarken;
         protected bool _pressed;
-        protected bool _hoverCursorIcon;
+        protected bool _overrideCursor;
 
         public bool Hovering;
 
@@ -20,11 +20,11 @@ namespace Artificial_Intelligence
 
         #region Methods
 
-        public Button(List<UIObject> children, Vector2 position, Vector2 size, Color color, int cornerRadius = 0, float hoverDarken = 0.2f, float clickDarken = 0.4f, bool hoverCursorIcon = false) : base(children, position, size, color, cornerRadius)
+        public Button(List<UIObject> children, Vector2 position, Vector2 size, Color color, int cornerRadius = 0, float hoverDarken = 0.2f, float clickDarken = 0.4f, bool overrideCursor = false) : base(children, position, size, color, cornerRadius)
         {
             _hoverDarken = hoverDarken;
             _clickDarken = clickDarken;
-            _hoverCursorIcon = hoverCursorIcon;
+            _overrideCursor = overrideCursor;
         }
 
         private bool IsHovering(Vector2 offset = new Vector2())
@@ -40,7 +40,7 @@ namespace Artificial_Intelligence
         
         protected void OnClickStart(GameTime gameTime, Vector2 offset = new Vector2())
         {
-
+            
         }
 
         protected void OnClickEnd(GameTime gameTime, Vector2 offset = new Vector2())
@@ -54,7 +54,7 @@ namespace Artificial_Intelligence
             if (IsHovering(offset))
             {
                 Hovering = true;
-                if (_hoverCursorIcon)
+                if (_overrideCursor)
                     Mouse.SetCursor(MouseCursor.Hand);
                 if (mouseState.LeftButton == ButtonState.Pressed && _pressed == false)
                 {
@@ -65,7 +65,7 @@ namespace Artificial_Intelligence
             else if (Hovering == true)
             {
                 Hovering = false;
-                if (_hoverCursorIcon)
+                if (_overrideCursor)
                     Mouse.SetCursor(MouseCursor.Arrow);
             }
             if (mouseState.LeftButton == ButtonState.Released && _pressed == true)

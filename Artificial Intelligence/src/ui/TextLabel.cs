@@ -39,7 +39,7 @@ namespace Artificial_Intelligence
 
         #region Methods
 
-        public TextLabel(SpriteFont font, Vector2 position, Vector2 size, string text, Color color, Alignment align) : base(position, size)
+        public TextLabel(SpriteFont font, Vector2 position, Vector2 size, string text, Color color, Alignment align, bool wordWrap = true) : base(position, size)
         {
             _font = font;
             _text = text;
@@ -49,6 +49,7 @@ namespace Artificial_Intelligence
 
         public override void Update(GameTime gameTime, Vector2 offset = new Vector2())
         {
+            base.Update(gameTime, offset);
             Rectangle bounds = new Rectangle((int)(Position + offset).X, (int)(Position + offset).Y, (int)Size.X, (int)Size.Y);
             Vector2 textSize = _font.MeasureString(_text);
             _pos = (Position + offset) + Size / 2;

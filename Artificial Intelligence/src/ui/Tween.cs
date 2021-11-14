@@ -36,20 +36,20 @@ namespace Artificial_Intelligence
         private EasingDirection _easingDirection;
         private EasingStyle _easingStyle;
         private float _duration;
-        private TimeSpan _startTimestamp;
+        private double _startTimestamp;
 
         #endregion
 
         #region Methods
 
-        public Tween(Vector2 start, Vector2 end, GameTime gameTime, float duration, EasingDirection easingDirection, EasingStyle easingStyle)
+        public Tween(Vector2 start, Vector2 end, double timestampInSeconds, float duration, EasingDirection easingDirection, EasingStyle easingStyle)
         {
             Start = start;
             End = end;
             _easingDirection = easingDirection;
             _easingStyle = easingStyle;
             _duration = duration;
-            _startTimestamp = gameTime.TotalGameTime;
+            _startTimestamp = timestampInSeconds;
         }
 
         public Vector2 Now(GameTime gameTime)
@@ -58,14 +58,14 @@ namespace Artificial_Intelligence
                 return End;
             if (_easingStyle == EasingStyle.Linear)
             {
-                return Vector2.Lerp(Start, End, (float)(gameTime.TotalGameTime - _startTimestamp).TotalSeconds / _duration);
+                return Vector2.Lerp(Start, End, (float)(gameTime.TotalGameTime.TotalSeconds - _startTimestamp) / _duration);
             }
             return Start;
         }
 
         public bool Active(GameTime gameTime)
         {
-            return (gameTime.TotalGameTime - _startTimestamp).TotalSeconds < _duration;
+            return gameTime.TotalGameTime.TotalSeconds - _startTimestamp < _duration;
         }
 
         #endregion

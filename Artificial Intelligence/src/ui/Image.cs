@@ -60,7 +60,14 @@ namespace Artificial_Intelligence
 
         public override void Update(GameTime gameTime, Vector2 offset = new Vector2())
         {
-            base.Update(gameTime, offset);
+            if (_positionTween != null)
+            {
+                _position = _positionTween.Now(gameTime);
+            }
+            if (_sizeTween != null)
+            {
+                Scale = _sizeTween.Now(gameTime).X;
+            }
         }
 
         public override void Draw(SpriteBatch spriteBatch, Vector2 offset = new Vector2())
@@ -68,11 +75,16 @@ namespace Artificial_Intelligence
             spriteBatch.Draw(_roundedTexture, _position + offset, null, _color, 0f, Vector2.Zero, Scale, SpriteEffects.None, 0f);
         }
 
+        public void TweenSize(double timestampInSeconds, float endSize, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
+        {
+            _sizeTween = new Tween(new Vector2(Scale, 0f), new Vector2(endSize, 0f), timestampInSeconds, time, easingDirection, easingStyle);
+        }
+
         protected void GenerateTexture()
         {
-            _data = new Color[(int)(_texture.Width * Scale) * (int)(_texture.Height * Scale)];
+            _data = new Color[(int)_texture.Width * (int)_texture.Height];
             _texture.GetData<Color>(_data);
-            _roundedTexture = InternalManager.CreateTexture((int)(_texture.Width * Scale), (int)(_texture.Height * Scale));
+            _roundedTexture = InternalManager.CreateTexture((int)_texture.Width, (int)_texture.Height);
             if (CornerRadius != 0)
             {
                 for (int y = 0; y < CornerRadius; y++)
@@ -82,16 +94,16 @@ namespace Artificial_Intelligence
                         double distanceFromCorner = Math.Pow(Math.Pow(CornerRadius - y, 2) + Math.Pow(CornerRadius - x, 2), 0.5) - CornerRadius;
                         if (Math.Abs(distanceFromCorner) <= 1)
                         {
-                            _data[x + y * (int)(_texture.Width * Scale)] *= (1f - (float)distanceFromCorner);
-                            _data[((int)(_texture.Width * Scale) - x) + y * (int)(_texture.Width * Scale) - 1] *= (1f - (float)distanceFromCorner);
-                            _data[x + ((int)(_texture.Height * Scale) - y - 1) * (int)(_texture.Width * Scale)] *= (1f - (float)distanceFromCorner);
-                            _data[((int)(_texture.Width * Scale) - x) + ((int)(_texture.Height * Scale) - y - 1) * (int)(_texture.Width * Scale) - 1] *= (1f - (float)distanceFromCorner);
+                            _data[x + y * (int)_texture.Width] *= (1f - (float)distanceFromCorner);
+                            _data[((int)_texture.Width - x) + y * (int)_texture.Width - 1] *= (1f - (float)distanceFromCorner);
+                            _data[x + ((int)_texture.Height - y - 1) * (int)_texture.Width] *= (1f - (float)distanceFromCorner);
+                            _data[((int)_texture.Width - x) + ((int)_texture.Height - y - 1) * (int)_texture.Width - 1] *= (1f - (float)distanceFromCorner);
                         } else if (distanceFromCorner > 0)
                         {
-                            _data[x + y * (int)(_texture.Width * Scale)] *= 0f;
-                            _data[((int)(_texture.Width * Scale) - x) + y * (int)(_texture.Width * Scale) - 1] *= 0f;
-                            _data[x + ((int)(_texture.Height * Scale) - y - 1) * (int)(_texture.Width * Scale)] *= 0f;
-                            _data[((int)(_texture.Width * Scale) - x) + ((int)(_texture.Height * Scale) - y - 1) * (int)(_texture.Width * Scale) - 1] *= 0f;
+                            _data[x + y * (int)_texture.Width] *= 0f;
+                            _data[((int)_texture.Width - x) + y * (int)_texture.Width - 1] *= 0f;
+                            _data[x + ((int)_texture.Height - y - 1) * (int)_texture.Width] *= 0f;
+                            _data[((int)_texture.Width - x) + ((int)_texture.Height - y - 1) * (int)_texture.Width - 1] *= 0f;
                         }
                     }
                 }

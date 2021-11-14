@@ -15,6 +15,7 @@ namespace Artificial_Intelligence
         Button button3;
         Frame nested;
         Image image;
+        TextBox bruh;
 
         public TestState() : base()
         {
@@ -60,6 +61,8 @@ namespace Artificial_Intelligence
             }, new Vector2(300, 50), new Vector2(300, 150), Color.Gray, 20);
 
             image = new Image(InternalManager.LoadedTextures["square"], new Vector2(300, 300), 1f, Color.White, 50);
+
+            bruh = new TextBox(InternalManager.LoadedFonts["Arial"], new Vector2(300, 400), new Vector2(200, 50), "This is a test\n21312\nahdahdahadh", Color.White, Color.Gray * 0.5f, Alignment.Center, true);
         }
 
         public override void Update(GameTime gameTime)
@@ -70,6 +73,7 @@ namespace Artificial_Intelligence
             button3.Update(gameTime);
             nested.Update(gameTime);
             image.Update(gameTime);
+            bruh.Update(gameTime);
         }
 
         public override void PostUpdate(GameTime gameTime)
@@ -86,6 +90,7 @@ namespace Artificial_Intelligence
             button3.Draw(spriteBatch);
             nested.Draw(spriteBatch);
             image.Draw(spriteBatch);
+            bruh.Draw(spriteBatch);
         }
     }
 }
