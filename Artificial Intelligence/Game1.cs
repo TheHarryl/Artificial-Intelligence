@@ -24,7 +24,7 @@ namespace Artificial_Intelligence
 
             InternalManager.Initialize(_graphics, Content);
 
-            InternalManager.AddGameState(0, new TestState());
+            InternalManager.AddGameState(0, new TestTweenState());
 
             base.Initialize();
         }
