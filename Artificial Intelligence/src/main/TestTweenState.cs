@@ -84,17 +84,17 @@ namespace Artificial_Intelligence
                 new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Cubic", Color.Gray, Alignment.Center)
             }, new Vector2(50, 550), new Vector2(200, 40), Color.White, 10);
 
-            frame1.TweenPosition(2.0, new Vector2(400, 50), EasingDirection.In, EasingStyle.Linear, 3);
-            frame2.TweenPosition(2.0, new Vector2(400, 100), EasingDirection.In, EasingStyle.Sine, 3);
-            frame3.TweenPosition(2.0, new Vector2(400, 150), EasingDirection.In, EasingStyle.Back, 3);
-            frame4.TweenPosition(2.0, new Vector2(400, 200), EasingDirection.In, EasingStyle.Quad, 3);
-            frame5.TweenPosition(2.0, new Vector2(400, 250), EasingDirection.In, EasingStyle.Quart, 3);
-            frame6.TweenPosition(2.0, new Vector2(400, 300), EasingDirection.In, EasingStyle.Quint, 3);
-            frame7.TweenPosition(2.0, new Vector2(400, 350), EasingDirection.In, EasingStyle.Bounce, 3);
-            frame8.TweenPosition(2.0, new Vector2(400, 400), EasingDirection.In, EasingStyle.Elastic, 3);
-            frame9.TweenPosition(2.0, new Vector2(400, 450), EasingDirection.In, EasingStyle.Exponential, 3);
-            frame10.TweenPosition(2.0, new Vector2(400, 500), EasingDirection.In, EasingStyle.Circular, 3);
-            frame11.TweenPosition(2.0, new Vector2(400, 550), EasingDirection.In, EasingStyle.Cubic, 3);
+            frame1.TweenPosition(2.0, new Vector2(500, 50), EasingDirection.In, EasingStyle.Linear, 3);
+            frame2.TweenPosition(2.0, new Vector2(500, 100), EasingDirection.In, EasingStyle.Sine, 3);
+            frame3.TweenPosition(2.0, new Vector2(500, 150), EasingDirection.In, EasingStyle.Back, 3);
+            frame4.TweenPosition(2.0, new Vector2(500, 200), EasingDirection.In, EasingStyle.Quad, 3);
+            frame5.TweenPosition(2.0, new Vector2(500, 250), EasingDirection.In, EasingStyle.Quart, 3);
+            frame6.TweenPosition(2.0, new Vector2(500, 300), EasingDirection.In, EasingStyle.Quint, 3);
+            frame7.TweenPosition(2.0, new Vector2(500, 350), EasingDirection.In, EasingStyle.Bounce, 3);
+            frame8.TweenPosition(2.0, new Vector2(500, 400), EasingDirection.In, EasingStyle.Elastic, 3);
+            frame9.TweenPosition(2.0, new Vector2(500, 450), EasingDirection.In, EasingStyle.Exponential, 3);
+            frame10.TweenPosition(2.0, new Vector2(500, 500), EasingDirection.In, EasingStyle.Circular, 3);
+            frame11.TweenPosition(2.0, new Vector2(500, 550), EasingDirection.In, EasingStyle.Cubic, 3);
         }
 
         public override void Update(GameTime gameTime)

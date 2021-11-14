@@ -2,6 +2,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using System.Numerics;
+using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace Artificial_Intelligence
 {
@@ -190,7 +192,7 @@ namespace Artificial_Intelligence
                 float p1 = 0.45f;
                 if (_easingDirection == EasingDirection.In)
                 {
-                    x = (float)Math.Pow(-2.0, 10.0 * (x - 1.0)) * (float)Math.Sin(2.0 * Math.PI * (x - 1.0 - p / 4.0) / p);
+                    x = (float)Complex.Pow(-2.0, 10.0 * (x - 1.0)).Real * (float)Math.Sin(2.0 * Math.PI * (x - 1.0 - p / 4.0) / p);
                 }
                 else if (_easingDirection == EasingDirection.Out)
                 {
