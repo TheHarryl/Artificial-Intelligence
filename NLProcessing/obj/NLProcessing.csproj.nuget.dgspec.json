@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\NLProcessing.csproj": {}
+    "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\NLProcessing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\NLProcessing.csproj": {
+    "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\NLProcessing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\NLProcessing.csproj",
+        "projectUniqueName": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\NLProcessing.csproj",
         "projectName": "NLProcessing",
-        "projectPath": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\NLProcessing.csproj",
+        "projectPath": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\NLProcessing.csproj",
         "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\harry\\Desktop\\Artificial-Intelligence\\NLProcessing\\obj\\",
+        "outputPath": "C:\\Users\\harry\\Desktop\\MonoGame\\Artificial Intelligence\\NLProcessing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -102,6 +102,7 @@ namespace Artificial_Intelligence
             {
                 if (_hovering == true && _overrideCursor)
                     Mouse.SetCursor(MouseCursor.Arrow);
+                _hovering = false;
                 if (_pressed == false && mouse.LeftButton == ButtonState.Pressed)
                     _selected = false;
             }
