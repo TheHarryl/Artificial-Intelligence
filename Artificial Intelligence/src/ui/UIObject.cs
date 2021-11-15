@@ -51,14 +51,16 @@ namespace Artificial_Intelligence
             
         }
 
-        public virtual void TweenPosition(double timestampInSeconds, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
+        public virtual void TweenPosition(double timestampInSeconds, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f, bool overrides = false)
         {
-            _positionTween = new Tween(_position, endPosition, timestampInSeconds, time, easingDirection, easingStyle);
+            if (overrides || _positionTween == null)
+                _positionTween = new Tween(_position, endPosition, timestampInSeconds, time, easingDirection, easingStyle);
         }
 
-        public virtual void TweenSize(double timestampInSeconds, Vector2 endSize, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
+        public virtual void TweenSize(double timestampInSeconds, Vector2 endSize, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f, bool overrides = false)
         {
-            _sizeTween = new Tween(_size, endSize, timestampInSeconds, time, easingDirection, easingStyle);
+            if (overrides || _sizeTween == null)
+                _sizeTween = new Tween(_size, endSize, timestampInSeconds, time, easingDirection, easingStyle);
         }
 
         public void TweenSizeAndPosition(double timestampInSeconds, Vector2 endSize, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)

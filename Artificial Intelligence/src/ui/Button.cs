@@ -45,7 +45,7 @@ namespace Artificial_Intelligence
 
         protected void OnClickEnd(GameTime gameTime, Vector2 offset = new Vector2())
         {
-            Parent.TweenPosition(gameTime.TotalGameTime.TotalSeconds, new Vector2(300, 300), EasingDirection.Out, EasingStyle.Quad, 1f);
+            Parent.TweenPosition(gameTime.TotalGameTime.TotalSeconds, new Vector2(300, 300), EasingDirection.Out, EasingStyle.Bounce, 1f);
         }
 
         public override void Update(GameTime gameTime, Vector2 offset = new Vector2())
