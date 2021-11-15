@@ -39,6 +39,7 @@ namespace Artificial_Intelligence
         public int getLetterIndex(Vector2 position, MouseState mouse, bool estimate = false)
         {
             Vector2 lastPosition = position;
+            int lastLineBreak = 0;
             for (int i = 0; i < _text.Length; i++)
             {
                 char letter = _text[i];
@@ -61,7 +62,11 @@ namespace Artificial_Intelligence
                     lastPosition.X = position.X;
                     lastPosition.Y += _font.LineSpacing;
                     if (lastPosition.Y > mouse.Y && estimate)
-                        return i;
+                        if (i > _highlightStartIndex)
+                            return i;
+                        else
+                            return lastLineBreak;
+                    lastLineBreak = i;
                 }
             }
             return -1;
