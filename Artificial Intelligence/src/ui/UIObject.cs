@@ -35,10 +35,14 @@ namespace Artificial_Intelligence
             if (_positionTween != null)
             {
                 _position = _positionTween.Now(gameTime);
+                if (!_positionTween.Active(gameTime))
+                    _positionTween = null;
             }
             if (_sizeTween != null)
             {
                 _size = _sizeTween.Now(gameTime);
+                if (!_sizeTween.Active(gameTime))
+                    _sizeTween = null;
             }
         }
 

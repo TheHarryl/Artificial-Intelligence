@@ -34,6 +34,11 @@ namespace Artificial_Intelligence
             get => _size;
             set => _size = value;
         }
+        public string Text
+        {
+            get => _text;
+            set => _text = value;
+        }
 
         #endregion
 

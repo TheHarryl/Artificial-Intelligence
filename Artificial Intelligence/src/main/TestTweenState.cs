@@ -20,6 +20,8 @@ namespace Artificial_Intelligence
         Frame frame9;
         Frame frame10;
         Frame frame11;
+        TextLabel text;
+        bool done = false;
 
         public TestTweenState() : base()
         {
@@ -41,60 +43,62 @@ namespace Artificial_Intelligence
 
             frame1 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Linear", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 50), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Linear", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 20), new Vector2(200, 30), Color.White, 10);
             frame2 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Sine", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 100), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Sine", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 60), new Vector2(200, 30), Color.White, 10);
             frame3 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Back", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 150), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Back", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 100), new Vector2(200, 30), Color.White, 10);
             frame4 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Quad", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 200), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Quad", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 140), new Vector2(200, 30), Color.White, 10);
             frame5 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Quart", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 250), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Quart", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 180), new Vector2(200, 30), Color.White, 10);
             frame6 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Quint", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 300), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Quint", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 220), new Vector2(200, 30), Color.White, 10);
             frame7 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Bounce", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 350), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Bounce", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 260), new Vector2(200, 30), Color.White, 10);
             frame8 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Elastic", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 400), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Elastic", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 300), new Vector2(200, 30), Color.White, 10);
             frame9 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Exponential", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 450), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Exponential", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 340), new Vector2(200, 30), Color.White, 10);
             frame10 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Circular", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 500), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Circular", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 380), new Vector2(200, 30), Color.White, 10);
             frame11 = new Frame(new List<UIObject>()
             {
-                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 40), "Cubic", Color.Gray, Alignment.Center)
-            }, new Vector2(50, 550), new Vector2(200, 40), Color.White, 10);
+                new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(0, 0), new Vector2(200, 30), "Cubic", Color.Gray, Alignment.Center)
+            }, new Vector2(100, 420), new Vector2(200, 30), Color.White, 10);
 
-            frame1.TweenPosition(2.0, new Vector2(500, 50), EasingDirection.In, EasingStyle.Linear, 3);
-            frame2.TweenPosition(2.0, new Vector2(500, 100), EasingDirection.In, EasingStyle.Sine, 3);
-            frame3.TweenPosition(2.0, new Vector2(500, 150), EasingDirection.In, EasingStyle.Back, 3);
-            frame4.TweenPosition(2.0, new Vector2(500, 200), EasingDirection.In, EasingStyle.Quad, 3);
-            frame5.TweenPosition(2.0, new Vector2(500, 250), EasingDirection.In, EasingStyle.Quart, 3);
-            frame6.TweenPosition(2.0, new Vector2(500, 300), EasingDirection.In, EasingStyle.Quint, 3);
-            frame7.TweenPosition(2.0, new Vector2(500, 350), EasingDirection.In, EasingStyle.Bounce, 3);
-            frame8.TweenPosition(2.0, new Vector2(500, 400), EasingDirection.In, EasingStyle.Elastic, 3);
-            frame9.TweenPosition(2.0, new Vector2(500, 450), EasingDirection.In, EasingStyle.Exponential, 3);
-            frame10.TweenPosition(2.0, new Vector2(500, 500), EasingDirection.In, EasingStyle.Circular, 3);
-            frame11.TweenPosition(2.0, new Vector2(500, 550), EasingDirection.In, EasingStyle.Cubic, 3);
+            text = new TextLabel(InternalManager.LoadedFonts["Arial"], new Vector2(300, 0), new Vector2(200, 50), "Tweening: In", Color.White, Alignment.Center);
+
+            frame1.TweenPosition(2.0, new Vector2(500, 20), EasingDirection.In, EasingStyle.Linear, 2);
+            frame2.TweenPosition(2.0, new Vector2(500, 60), EasingDirection.In, EasingStyle.Sine, 2);
+            frame3.TweenPosition(2.0, new Vector2(500, 100), EasingDirection.In, EasingStyle.Back, 2);
+            frame4.TweenPosition(2.0, new Vector2(500, 140), EasingDirection.In, EasingStyle.Quad, 2);
+            frame5.TweenPosition(2.0, new Vector2(500, 180), EasingDirection.In, EasingStyle.Quart, 2);
+            frame6.TweenPosition(2.0, new Vector2(500, 220), EasingDirection.In, EasingStyle.Quint, 2);
+            frame7.TweenPosition(2.0, new Vector2(500, 260), EasingDirection.In, EasingStyle.Bounce, 2);
+            frame8.TweenPosition(2.0, new Vector2(500, 300), EasingDirection.In, EasingStyle.Elastic, 2);
+            frame9.TweenPosition(2.0, new Vector2(500, 340), EasingDirection.In, EasingStyle.Exponential, 2);
+            frame10.TweenPosition(2.0, new Vector2(500, 380), EasingDirection.In, EasingStyle.Circular, 2);
+            frame11.TweenPosition(2.0, new Vector2(500, 420), EasingDirection.In, EasingStyle.Cubic, 2);
         }
 
         public override void Update(GameTime gameTime)
@@ -110,6 +114,35 @@ namespace Artificial_Intelligence
             frame9.Update(gameTime);
             frame10.Update(gameTime);
             frame11.Update(gameTime);
+            text.Update(gameTime);
+
+            if (gameTime.TotalGameTime.TotalSeconds >= 6.0 && !done)
+            {
+                done = true;
+                text.Text = "Tweening: Out";
+                frame1.Position = new Vector2(100, 20);
+                frame2.Position = new Vector2(100, 60);
+                frame3.Position = new Vector2(100, 100);
+                frame4.Position = new Vector2(100, 140);
+                frame5.Position = new Vector2(100, 180);
+                frame6.Position = new Vector2(100, 220);
+                frame7.Position = new Vector2(100, 260);
+                frame8.Position = new Vector2(100, 300);
+                frame9.Position = new Vector2(100, 340);
+                frame10.Position = new Vector2(100, 380);
+                frame11.Position = new Vector2(100, 420);
+                frame1.TweenPosition(8.0, new Vector2(500, 20), EasingDirection.Out, EasingStyle.Linear, 2);
+                frame2.TweenPosition(8.0, new Vector2(500, 60), EasingDirection.Out, EasingStyle.Sine, 2);
+                frame3.TweenPosition(8.0, new Vector2(500, 100), EasingDirection.Out, EasingStyle.Back, 2);
+                frame4.TweenPosition(8.0, new Vector2(500, 140), EasingDirection.Out, EasingStyle.Quad, 2);
+                frame5.TweenPosition(8.0, new Vector2(500, 180), EasingDirection.Out, EasingStyle.Quart, 2);
+                frame6.TweenPosition(8.0, new Vector2(500, 220), EasingDirection.Out, EasingStyle.Quint, 2);
+                frame7.TweenPosition(8.0, new Vector2(500, 260), EasingDirection.Out, EasingStyle.Bounce, 2);
+                frame8.TweenPosition(8.0, new Vector2(500, 300), EasingDirection.Out, EasingStyle.Elastic, 2);
+                frame9.TweenPosition(8.0, new Vector2(500, 340), EasingDirection.Out, EasingStyle.Exponential, 2);
+                frame10.TweenPosition(8.0, new Vector2(500, 380), EasingDirection.Out, EasingStyle.Circular, 2);
+                frame11.TweenPosition(8.0, new Vector2(500, 420), EasingDirection.Out, EasingStyle.Cubic, 2);
+            }
         }
 
         public override void PostUpdate(GameTime gameTime)
@@ -130,6 +163,7 @@ namespace Artificial_Intelligence
             frame9.Draw(spriteBatch);
             frame10.Draw(spriteBatch);
             frame11.Draw(spriteBatch);
+            text.Draw(spriteBatch);
         }
     }
 }

@@ -2,7 +2,6 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
-using System.Numerics;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace Artificial_Intelligence
@@ -192,7 +191,7 @@ namespace Artificial_Intelligence
                 float p1 = 0.45f;
                 if (_easingDirection == EasingDirection.In)
                 {
-                    x = (float)Complex.Pow(-2.0, 10.0 * (x - 1.0)).Real * (float)Math.Sin(2.0 * Math.PI * (x - 1.0 - p / 4.0) / p);
+                    x = -(float)Math.Pow(2.0, 10.0 * (x - 1.0)) * (float)Math.Sin(2.0 * Math.PI * (x - 1.0 - p / 4.0) / p);
                 }
                 else if (_easingDirection == EasingDirection.Out)
                 {
@@ -214,15 +213,15 @@ namespace Artificial_Intelligence
                 }
                 else if (_easingDirection == EasingDirection.Out)
                 {
-                    x = 1.001f * (float)Math.Pow(-2.0, -10.0 * x) + 1f;
+                    x = -1.001f * (float)Math.Pow(2.0, -10.0 * x) + 1f;
                 }
                 else if (_easingDirection == EasingDirection.InOut)
                 {
-                    x = x <= 0.5f ? 0.5f * (float)Math.Pow(2.0, 20.0 * x - 10.0) - 0.0005f : 0.50025f * (float)Math.Pow(-2.0, -20.0 * x + 10.0) + 1f;
+                    x = x <= 0.5f ? 0.5f * (float)Math.Pow(2.0, 20.0 * x - 10.0) - 0.0005f : 0.50025f * -(float)Math.Pow(2.0, -20.0 * x + 10.0) + 1f;
                 }
                 else if (_easingDirection == EasingDirection.OutIn)
                 {
-                    x = x <= 0.5f ? 0.5005f * (float)Math.Pow(-2.0, -20.0 * x) + 0.5005f : 0.5f * (float)Math.Pow(2.0, 10.0 * (2.0 * x - 2.0)) + 0.4995f;
+                    x = x <= 0.5f ? 0.5005f * -(float)Math.Pow(2.0, -20.0 * x) + 0.5005f : 0.5f * (float)Math.Pow(2.0, 10.0 * (2.0 * x - 2.0)) + 0.4995f;
                 }
             } else if (_easingStyle == EasingStyle.Circular)
             {
