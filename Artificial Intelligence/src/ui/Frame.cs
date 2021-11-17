@@ -87,6 +87,15 @@ namespace Artificial_Intelligence
             }
         }
 
+        public override void Draw(SpriteBatch spriteBatch, Vector2 topLeftPadding, Vector2 bottomRightPadding, Vector2 offset = new Vector2())
+        {
+            spriteBatch.Draw(_texture, _position + offset, new Rectangle((int)topLeftPadding.X, (int)topLeftPadding.Y, (int)(Size - bottomRightPadding).X, (int)(Size - bottomRightPadding).Y), _color, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+            for (int i = 0; i < Children.Count; i++)
+            {
+                Children[i].Draw(spriteBatch, offset + Position);
+            }
+        }
+
         protected void GenerateTexture()
         {
             _texture = InternalManager.CreateTexture((int)Size.X, (int)Size.Y);

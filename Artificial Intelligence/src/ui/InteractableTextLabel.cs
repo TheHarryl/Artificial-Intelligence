@@ -14,11 +14,12 @@ namespace Artificial_Intelligence
         #region Fields
 
         private Dictionary<char, SpriteFont.Glyph> _glyphs;
-        private float _fontSize;
-        private bool _pressed;
+        protected float _fontSize;
+        protected bool _pressed;
         private bool _hovering;
         private Color _highlightColor;
         private bool _overrideCursor;
+        protected double _lastClick;
 
         protected int _highlightStartIndex;
         protected int _highlightEndIndex;
@@ -40,9 +41,9 @@ namespace Artificial_Intelligence
         {
             Vector2 lastPosition = position;
             int lastLineBreak = 0;
-            for (int i = 0; i < _text.Length; i++)
+            for (int i = 0; i < Text.Length; i++)
             {
-                char letter = _text[i];
+                char letter = Text[i];
                 if (_glyphs.ContainsKey(letter))
                 {
                     SpriteFont.Glyph glyph = _glyphs[letter];
@@ -51,9 +52,13 @@ namespace Artificial_Intelligence
                     if (bounds.Contains(mouse.X, mouse.Y))
                     {
                         if (boundsLeft.Contains(mouse.X, mouse.Y))
+                        {
                             return i;
+                        }
                         else
+                        {
                             return i + 1;
+                        }
                     }
                     lastPosition.X += glyph.WidthIncludingBearings + _font.Spacing;
                 }
@@ -63,9 +68,13 @@ namespace Artificial_Intelligence
                     lastPosition.Y += _font.LineSpacing;
                     if (lastPosition.Y > mouse.Y && estimate)
                         if (i > _highlightStartIndex)
+                        {
                             return i;
+                        }
                         else
+                        {
                             return lastLineBreak;
+                        }
                     lastLineBreak = i;
                 }
             }
@@ -77,7 +86,7 @@ namespace Artificial_Intelligence
             base.Update(gameTime, offset);
 
             Vector2 position = _pos - _origin;
-            Rectangle textBounds = new Rectangle((int)position.X, (int)position.Y, (int)_font.MeasureString(_text).X, (int)_font.MeasureString(_text).Y);
+            Rectangle textBounds = new Rectangle((int)position.X, (int)position.Y, (int)_font.MeasureString(Text).X, (int)_font.MeasureString(Text).Y);
             MouseState mouse = Mouse.GetState();
 
             if (textBounds.Contains(mouse.X, mouse.Y))
@@ -97,6 +106,7 @@ namespace Artificial_Intelligence
                 }
                 if (_pressed == false && mouse.LeftButton == ButtonState.Pressed)
                 {
+                    _lastClick = gameTime.TotalGameTime.TotalSeconds;
                     _pressed = true;
                     _highlightStartIndex = letterIndex;
                     _highlightEndIndex = letterIndex;
@@ -141,7 +151,6 @@ namespace Artificial_Intelligence
         public override void Draw(SpriteBatch spriteBatch, Vector2 offset = new Vector2())
         {
             Vector2 position = _pos - _origin;
-            Rectangle textBounds = new Rectangle((int)position.X, (int)position.Y, (int)_font.MeasureString(_text).X, (int)_font.MeasureString(_text).Y);
 
             if (_selected && _highlightStartIndex != _highlightEndIndex)
             {

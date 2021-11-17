@@ -75,6 +75,11 @@ namespace Artificial_Intelligence
             spriteBatch.Draw(_roundedTexture, _position + offset, null, _color, 0f, Vector2.Zero, Scale, SpriteEffects.None, 0f);
         }
 
+        public override void Draw(SpriteBatch spriteBatch, Vector2 topLeftPadding = new Vector2(), Vector2 bottomRightPadding = new Vector2(), Vector2 offset = new Vector2())
+        {
+            spriteBatch.Draw(_roundedTexture, _position + offset, new Rectangle((int)topLeftPadding.X, (int)topLeftPadding.Y, (int)(_roundedTexture.Width * Scale - bottomRightPadding.X), (int)(_roundedTexture.Height * Scale - bottomRightPadding.Y)), _color, 0f, Vector2.Zero, Scale, SpriteEffects.None, 0f);
+        }
+
         public void TweenSize(double timestampInSeconds, float endSize, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f)
         {
             _sizeTween = new Tween(new Vector2(Scale, 0f), new Vector2(endSize, 0f), timestampInSeconds, time, easingDirection, easingStyle);

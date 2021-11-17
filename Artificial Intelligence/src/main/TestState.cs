@@ -62,7 +62,7 @@ namespace Artificial_Intelligence
 
             image = new Image(InternalManager.LoadedTextures["square"], new Vector2(300, 300), 1f, Color.White, 50);
 
-            bruh = new TextBox(InternalManager.LoadedFonts["Arial"], new Vector2(300, 400), new Vector2(200, 50), "This is a test\n21312\nahdahdahadh", Color.White, Color.Gray * 0.5f, Alignment.Center, true);
+            bruh = new TextBox(InternalManager.LoadedFonts["Arial"], new Vector2(300, 400), new Vector2(200, 50), "", "Click here to type", Color.White, Color.LightGray, Color.Gray * 0.5f, Alignment.Left | Alignment.Top, true);
         }
 
         public override void Update(GameTime gameTime)

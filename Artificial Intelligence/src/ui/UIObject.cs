@@ -51,6 +51,10 @@ namespace Artificial_Intelligence
             
         }
 
+        public virtual void Draw(SpriteBatch spriteBatch, Vector2 topLeftPadding, Vector2 bottomRightPadding, Vector2 offset = new Vector2())
+        {
+        }
+
         public virtual void TweenPosition(double timestampInSeconds, Vector2 endPosition, EasingDirection easingDirection = EasingDirection.Out, EasingStyle easingStyle = EasingStyle.Quad, float time = 1f, bool overrides = false)
         {
             if (overrides || _positionTween == null)

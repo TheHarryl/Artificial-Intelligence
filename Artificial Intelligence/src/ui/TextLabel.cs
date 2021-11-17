@@ -34,7 +34,7 @@ namespace Artificial_Intelligence
             get => _size;
             set => _size = value;
         }
-        public string Text
+        public virtual string Text
         {
             get => _text;
             set => _text = value;
@@ -56,7 +56,7 @@ namespace Artificial_Intelligence
         {
             base.Update(gameTime, offset);
             Rectangle bounds = new Rectangle((int)(Position + offset).X, (int)(Position + offset).Y, (int)Size.X, (int)Size.Y);
-            Vector2 textSize = _font.MeasureString(_text);
+            Vector2 textSize = _font.MeasureString(Text);
             _pos = (Position + offset) + Size / 2;
             _origin = textSize * 0.5f;
 
@@ -75,7 +75,7 @@ namespace Artificial_Intelligence
 
         public override void Draw(SpriteBatch spriteBatch, Vector2 offset = new Vector2())
         {
-            spriteBatch.DrawString(_font, _text, _pos, _color, 0, _origin, 1, SpriteEffects.None, 0);
+            spriteBatch.DrawString(_font, Text, _pos, _color, 0, _origin, 1, SpriteEffects.None, 0);
         }
 
         #endregion

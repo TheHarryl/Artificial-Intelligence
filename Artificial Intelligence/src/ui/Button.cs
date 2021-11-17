@@ -90,6 +90,19 @@ namespace Artificial_Intelligence
             }
         }
 
+        public override void Draw(SpriteBatch spriteBatch, Vector2 topLeftPadding, Vector2 bottomRightPadding, Vector2 offset = new Vector2())
+        {
+            base.Draw(spriteBatch, offset);
+            if (_pressed)
+            {
+                spriteBatch.Draw(_texture, _position + offset, new Rectangle((int)topLeftPadding.X, (int)topLeftPadding.Y, (int)(Size - bottomRightPadding).X, (int)(Size - bottomRightPadding).Y), Color.Black * _clickDarken);
+            }
+            else if (Hovering)
+            {
+                spriteBatch.Draw(_texture, Position + offset, Color.Black * _hoverDarken);
+            }
+        }
+
         #endregion
     }
 }
