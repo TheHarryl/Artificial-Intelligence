@@ -33,8 +33,8 @@ namespace Artificial_Intelligence
                 new Frame(new List<UIObject>(){
                     new Frame(new List<UIObject> ()
                     {
-                        new TextBox(InternalManager.LoadedFonts["Arial"], new Vector2(5, 5), new Vector2(770, 40), "", "Enter a message", new Color(200, 200, 200), new Color(150, 150, 150), Color.White, Alignment.Left | Alignment.Top, true, true)
-                    }, new Vector2(10, 420), new Vector2(780, 50), new Color(30, 30, 30), 10)
+                        new TextBox(InternalManager.LoadedFonts["Arial"], new Vector2(5, 5), new Vector2(770, 50), "", "Enter a message", new Color(200, 200, 200), new Color(150, 150, 150), new Color(100, 100, 100), Alignment.Left | Alignment.Top, true, true)
+                    }, new Vector2(10, 410), new Vector2(780, 60), new Color(30, 30, 30), 10)
                 }, new Vector2(0, 0), new Vector2(800, 480), new Color(47, 47, 47)),
             };
         }

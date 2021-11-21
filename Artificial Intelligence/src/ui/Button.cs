@@ -20,7 +20,7 @@ namespace Artificial_Intelligence
 
         #region Methods
 
-        public Button(List<UIObject> children, Vector2 position, Vector2 size, Color color, int cornerRadius = 0, float hoverDarken = 0.2f, float clickDarken = 0.4f, bool overrideCursor = false) : base(children, position, size, color, cornerRadius)
+        public Button(List<UIObject> children, Vector2 position, Vector2 size, Color color, int cornerRadius = 0, float hoverDarken = 0.2f, float clickDarken = 0.4f, bool overrideCursor = true) : base(children, position, size, color, cornerRadius)
         {
             _hoverDarken = hoverDarken;
             _clickDarken = clickDarken;

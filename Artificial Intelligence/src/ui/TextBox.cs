@@ -40,7 +40,7 @@ namespace Artificial_Intelligence
 
         #region Methods
 
-        public TextBox(SpriteFont font, Vector2 position, Vector2 size, string text, string placeholderText, Color textColor, Color placeholderColor, Color highlightColor, Alignment align, bool overrideCursor = false, bool wordWrap = true) : base(font, position, size, text, textColor, highlightColor, align, overrideCursor, wordWrap)
+        public TextBox(SpriteFont font, Vector2 position, Vector2 size, string text, string placeholderText, Color textColor, Color placeholderColor, Color highlightColor, Alignment align, bool overrideCursor = true, bool wordWrap = true) : base(font, position, size, text, textColor, highlightColor, align, overrideCursor, wordWrap)
         {
             KEYS = new Dictionary<Keys, string>()
             {
@@ -70,13 +70,28 @@ namespace Artificial_Intelligence
                 { Keys.X, "x" },
                 { Keys.Y, "y" },
                 { Keys.Z, "z" },
+                { Keys.D1, "1" },
+                { Keys.D2, "2" },
+                { Keys.D3, "3" },
+                { Keys.D4, "4" },
+                { Keys.D5, "5" },
+                { Keys.D6, "6" },
+                { Keys.D7, "7" },
+                { Keys.D8, "8" },
+                { Keys.D9, "9" },
+                { Keys.D0, "0" },
                 { Keys.Space, " " },
                 { Keys.Enter, "\n" },
-                { Keys.OemBackslash, "\\" },
+                //{ Keys.OemBackslash, "\\" },
                 { Keys.OemQuestion, "?" },
                 { Keys.OemPeriod, "." },
                 { Keys.OemSemicolon, ";" },
-                { Keys.OemMinus, "-" },
+                //{ Keys.OemMinus, "-" },
+                //{ Keys.OemPlus, "+" },
+                { Keys.OemQuotes, "\"" },
+                //{ Keys.OemOpenBrackets, "[" },
+                //{ Keys.OemCloseBrackets, "]" },
+                { Keys.OemComma, "," },
             };
             _inputDebounce = new Dictionary<Keys, KeyValuePair<bool, double>>();
             _placeholderText = placeholderText;
@@ -146,8 +161,18 @@ namespace Artificial_Intelligence
                         {
                             _inputDebounce[pressedKeys[i]] = new KeyValuePair<bool, double>(true, gameTime.TotalGameTime.TotalSeconds);
                         }
+                        if (pressedKeys[i] == Keys.Enter)
+                        {
+                            OnEnter(gameTime, offset);
+                        }
                         if (KEYS.ContainsKey(pressedKeys[i]))
                         {
+                            if (_highlightStartIndex != _highlightEndIndex)
+                            {
+                                _text = _text.Remove(min, length);
+                                _highlightStartIndex = min;
+                                _highlightEndIndex = min;
+                            }
                             _text = _text.Insert(min, state.IsKeyDown(Keys.LeftShift) || state.IsKeyDown(Keys.RightShift) ? KEYS[pressedKeys[i]].ToUpper() : KEYS[pressedKeys[i]].ToLower());
                             _highlightStartIndex += KEYS[pressedKeys[i]].Length;
                             _highlightEndIndex += KEYS[pressedKeys[i]].Length;
@@ -207,9 +232,17 @@ namespace Artificial_Intelligence
             }
         }
 
+        protected virtual void OnEnter(GameTime gameTime, Vector2 offset = new Vector2())
+        {
+
+        }
+
         public override void Draw(SpriteBatch spriteBatch, Vector2 offset = new Vector2())
         {
-            base.Draw(spriteBatch, offset);
+            if (_text.Length > 0)
+                base.Draw(spriteBatch, offset);
+            else
+                spriteBatch.DrawString(_font, Text, _pos, _placeholderColor, 0, _origin, 1, SpriteEffects.None, 0);
             if (_selected && _tick && _highlightStartIndex == _highlightEndIndex)
             {
                 _currentLineStart = 0;

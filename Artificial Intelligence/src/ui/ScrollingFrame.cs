@@ -5,27 +5,19 @@ using System.Collections.Generic;
 
 namespace Artificial_Intelligence
 {
-    public class ScrollingFrame : Frame
+    public class ChatWindow : ScrollingFrame
     {
         #region Fields
 
-        protected Vector2 _scrollSize;
-        protected float _scrollBarSize;
-        protected Color _scrollBarColor;
-        protected EasingStyle _scrollAnimation;
-        protected bool _scrollBarAlwaysVisible;
+
 
         #endregion
 
         #region Methods
 
-        public ScrollingFrame(List<UIObject> children, Vector2 position, Vector2 frameSize, Vector2 scrollSize, Color color, float scrollBarSize, Color scrollBarColor, bool scrollBarAlwaysVisible = true,  EasingStyle scrollAnimation = EasingStyle.Quad, int cornerRadius = 0) : base(children, position, frameSize, color, cornerRadius)
+        public ChatWindow(List<UIObject> children, Vector2 position, Vector2 frameSize, Vector2 scrollSize, Color color, float scrollBarSize, Color scrollBarColor, bool scrollBarAlwaysVisible = true,  EasingStyle scrollAnimation = EasingStyle.Quad, int cornerRadius = 0) : base(children, position, frameSize, scrollSize, color, scrollBarSize, scrollBarColor, scrollBarAlwaysVisible, scrollAnimation, cornerRadius)
         {
-            _scrollSize = scrollSize;
-            _scrollBarSize = scrollBarSize;
-            _scrollBarColor = scrollBarColor;
-            _scrollBarAlwaysVisible = scrollBarAlwaysVisible;
-            _scrollAnimation = scrollAnimation;
+            
         }
 
         public override void Update(GameTime gameTime, Vector2 offset = new Vector2())
