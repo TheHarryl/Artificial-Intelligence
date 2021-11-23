@@ -9,7 +9,7 @@ namespace NLProcessing
         public readonly string Value;
         public readonly List<string> PossiblePartsOfSpeech;
 
-        private int _partOfSpeechIndex;
+        public int _partOfSpeechIndex;
         public int PartOfSpeechIndex {
             get => _partOfSpeechIndex;
             set {
@@ -25,16 +25,19 @@ namespace NLProcessing
             }
         }
 
-        public string PartOfSpeech
+        public List<string> PartOfSpeech
         {
-            get => PossiblePartsOfSpeech[PartOfSpeechIndex];
+            get
+            {
+                return _partOfSpeechIndex == -1 ? PossiblePartsOfSpeech : new List<string>() { PossiblePartsOfSpeech[PartOfSpeechIndex] };
+            }
         }
 
         public Word(string value, List<string> possiblePartsOfSpeech)
         {
             Value = value;
             PossiblePartsOfSpeech = possiblePartsOfSpeech;
-            PartOfSpeechIndex = 0;
+            _partOfSpeechIndex = -1;
         }
     }
 }
