@@ -215,7 +215,7 @@ namespace Artificial_Intelligence
                                 _highlightStartIndex = max;
                                 _highlightEndIndex = max;
                             }
-                            else if (max < _text.Length - 1)
+                            else if (max < _text.Length)
                             {
                                 _highlightStartIndex = max + 1;
                                 _highlightEndIndex = _highlightStartIndex;
